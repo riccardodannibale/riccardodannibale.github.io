@@ -21,7 +21,7 @@ permalink: /info/
     <p class="small">
       Email: riccardodannibale1@gmail.com<br>
       Tel: +39 327 320 5363<br>
-      GitHub: <a href="https://github.com/ricky2905" target="\\\\\\\_blank" rel="noreferrer">github.com/ricky2905</a><br>
+      GitHub: <a href="https://github.com/riccardodannibale" target="\\\\\\\_blank" rel="noreferrer">github.com/riccardodannibale</a><br>
       LinkedIn: <a href="https://www.linkedin.com/in/riccardo-d-annibale-8898562b5/" target="\\\_blank" rel="noreferrer">Riccardo D'Annibale</a>
     </p>
   </div>
