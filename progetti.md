@@ -63,4 +63,22 @@ permalink: /progetti/
     <div class="stack"><span class="badge">FPGA</span><span class="badge">Cryptography</span><span class="badge">Hardware security</span></div>
   </article>
 
+<article class="item">
+  <h3>ASD Circolo Campeggiatori Romani – Scuola Vela FIV</h3>
+  <div class="meta">Website management · maintenance · security validation</div>
+  <p>
+    Management and maintenance of the club website, with content updates and security validation.
+    The project also reflects my direct involvement with the club as a sailing instructor.
+  </p>
 
+  <a class="project-link" href="https://www.velaccr.it/" target="_blank" rel="noreferrer">
+    🔗 Visit the website
+  </a>
+
+  <div class="stack">
+    <span class="badge">Website</span>
+    <span class="badge">Maintenance</span>
+    <span class="badge">Security</span>
+    <span class="badge">Sailing</span>
+  </div>
+</article>
