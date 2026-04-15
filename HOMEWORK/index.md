@@ -8,9 +8,9 @@ permalink: /HOMEWORK/
 
 **Email:** [dannibale.2063306@studenti.uniroma1.it](mailto:dannibale.2063306@studenti.uniroma1.it)
 
-**GitHub:** [ricky2905](https://github.com/ricky2905)
+**GitHub:** [Riccardo D'Annibale](https://github.com/riccardodannibale)
 
-[![View on GitHub](https://img.shields.io/badge/View-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/ricky2905)
+[![View on GitHub](https://img.shields.io/badge/View-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/riccardodannibale)
 
 ---
 
