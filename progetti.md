@@ -23,7 +23,7 @@ permalink: /progetti/
 
 
 
-&#x20; <a class="project-link" href="https://github.com/ricky2905/SITO-PALESTRA" target="\_blank">
+&#x20; <a class="project-link" href="https://github.com/riccardodannibale/SITO-PALESTRA" target="\_blank">
 
 &#x20;   🔗 Vedi su GitHub
 
@@ -39,7 +39,7 @@ permalink: /progetti/
       gestione della connessione e logica applicativa orientata al real-time.
     </p>
 
-&#x20; <a class="project-link" href="https://github.com/ricky2905/Chat-P2P" target="\_blank">
+&#x20; <a class="project-link" href="https://github.com/riccardodannibale/Chat-P2P" target="\_blank">
 
 &#x20;   🔗 Vedi su GitHub
 
@@ -55,7 +55,7 @@ permalink: /progetti/
       È il progetto più coerente con un profilo cyber-ingegneristico avanzato.
     </p>
 
-&#x20; <a class="project-link" href="https://github.com/ricky2905/TESI-SPERIMENTALE-ASCON-SU-FPGA" target="\_blank">
+&#x20; <a class="project-link" href="https://github.com/riccardodannibale/TESI-SPERIMENTALE-ASCON-SU-FPGA" target="\_blank">
 
 &#x20;   🔗 Vedi su GitHub
 
