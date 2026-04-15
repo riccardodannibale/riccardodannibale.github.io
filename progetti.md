@@ -55,7 +55,7 @@ permalink: /progetti/
       È il progetto più coerente con un profilo cyber-ingegneristico avanzato.
     </p>
 
-&#x20; <a class="project-link" href="https://github.com/ricky2905/" target="\_blank">
+&#x20; <a class="project-link" href="https://github.com/ricky2905/TESI-SPERIMENTALE-ASCON-SU-FPGA" target="\_blank">
 
 &#x20;   🔗 Vedi su GitHub
 
