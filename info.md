@@ -35,6 +35,15 @@ permalink: /info/
       <div class="meta">June 2023 - Present</div>
       <p>Continuous training on IT and computer science fundamentals, cybersecurity practices, Microsoft Office, and development tools.</p>
     </article>
+    
+    <article class="item">
+  <h3>Website Management & Sailing Instructor</h3>
+  <div class="meta">ASD Circolo Campeggiatori Romani – Scuola Vela FIV · Present</div>
+  <p>
+    Responsible for website management, content updates, maintenance, and security validation.
+    In parallel, I also work as a sailing instructor for the club, supporting training activities and courses.
+  </p>
+</article>
 
 &#x20;   <article class="item">
 <h3>Private Tutor</h3>
