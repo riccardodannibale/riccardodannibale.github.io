@@ -10,7 +10,7 @@ permalink: /
     <div>
       <h1>Riccardo D’Annibale</h1>
       <p>
-      Cybersecurity Master’s student with a strong technical background in information engineering and programming, interested in IT security, risk management, and the role of cybersecurity in organizational and business contexts.
+      I'm a Cybersecurity Master’s student with a technical background in information engineering and programming, interested in IT security, risk management, and the role of cybersecurity in organizational and business contexts.
       </p>
 
 &#x20;     <div class="cta-row">
