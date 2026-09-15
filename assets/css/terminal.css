@@ -1,0 +1,228 @@
+
+
+:root {
+  --bg:     #0a0d10;
+  --fg:     #cbd5d1;
+  --muted:  #5c6b64;
+  --green:  #4ade80;
+  --blue:   #60a5fa;
+  --yellow: #fbbf24;
+  --red:    #f87171;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ---------- Matrix background ---------- */
+
+#matrix-canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.22;
+}
+
+/* ---------- Terminal ---------- */
+
+#terminal {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 26px;
+  overflow: hidden;
+}
+
+#output {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  white-space: pre-wrap;
+  word-break: break-word;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,.1) transparent;
+  padding-right: 4px;
+}
+
+#output > .line { flex-shrink: 0; }
+#output > .line:first-child { margin-top: auto; }
+
+#output::-webkit-scrollbar { width: 8px; }
+#output::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.08);
+  border-radius: 4px;
+}
+
+.line {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+
+/* ---------- Prompt ---------- */
+
+#prompt-line {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: baseline;
+  padding-top: 6px;
+  gap: 0;
+}
+
+#prompt-text {
+  white-space: nowrap;
+  color: var(--muted);
+  user-select: none;
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 65%;
+}
+#prompt-text .user  { color: var(--green); font-weight: 500; }
+#prompt-text .path  { color: var(--blue); }
+#prompt-text .sigil { color: var(--muted); }
+
+#cmd {
+  flex: 1 1 auto;
+  min-width: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--fg);
+  font: inherit;
+  padding: 0;
+  margin: 0;
+  caret-color: var(--green);
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+/* ---------- Colors ---------- */
+
+.c-green  { color: var(--green); }
+.c-blue   { color: var(--blue); }
+.c-yellow { color: var(--yellow); }
+.c-red    { color: var(--red); }
+.c-muted  { color: var(--muted); }
+
+a.term-link {
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-color: rgba(96,165,250,.4);
+  text-underline-offset: 3px;
+  word-break: break-all;
+}
+a.term-link:hover { color: #93c5fd; }
+
+/* ---------- ASCII banners (figlet-style) ---------- */
+
+.figlet {
+  display: block;
+  white-space: pre;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  font-family: inherit;
+  font-size: 11px;      /* base, poi auto-fit in JS */
+  line-height: 1.05;
+  color: var(--green);
+  text-shadow: 0 0 8px rgba(74,222,128,.45);
+  margin: 8px 0 10px;
+  letter-spacing: 0;
+  scrollbar-width: none;
+}
+.figlet::-webkit-scrollbar { display: none; }
+
+/* ---------- "tap to type" hint ---------- */
+
+#tap-hint {
+  position: fixed;
+  bottom: 14px;
+  right: 16px;
+  z-index: 2;
+  font-size: 11px;
+  color: var(--muted);
+  background: rgba(0,0,0,.35);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 999px;
+  padding: 6px 10px;
+  pointer-events: none;
+  transition: opacity .3s ease;
+}
+#tap-hint.hide { opacity: 0; }
+
+/* =========================================================
+   Responsive — Tablet
+   ========================================================= */
+
+@media (max-width: 900px) {
+  #terminal { padding: 18px 20px; }
+}
+
+/* =========================================================
+   Responsive — Mobile
+   ========================================================= */
+
+@media (max-width: 640px) {
+  #terminal {
+    padding: 12px 14px calc(12px + env(safe-area-inset-bottom));
+    font-size: 14px;
+  }
+
+  #prompt-line { font-size: 14px; padding-top: 4px; }
+  #output      { font-size: 14px; }
+  .line        { line-height: 1.55; }
+
+  #cmd {
+    font-size: 16px;      /* evita zoom iOS */
+    padding: 2px 0;
+  }
+
+  #tap-hint {
+    bottom: 10px;
+    right: 12px;
+    font-size: 10px;
+    padding: 5px 9px;
+  }
+}
+
+/* =========================================================
+   Responsive — Small phones
+   ========================================================= */
+
+@media (max-width: 380px) {
+  #terminal { padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); }
+  #output   { font-size: 13.5px; }
+  #prompt-line { font-size: 13.5px; }
+}
+
+/* Preferenza utente: riduzione animazioni */
+@media (prefers-reduced-motion: reduce) {
+  #matrix-canvas { display: none; }
+}
